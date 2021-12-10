@@ -44,3 +44,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/.vs/slnx.sqlite
+/.vs/DecemberHackathon/v16/TestStore/0/testlog.manifest
+/.vs/DecemberHackathon/v16/TestStore/0/000.testlog
+/.vs/DecemberHackathon/v16/TestStore/0
+/.vs/DecemberHackathon/v16/.suo
+/.vs/DecemberHackathon/v16
+/.vs/DecemberHackathon/config/applicationhost.config
+/.vs/DecemberHackathon/config

@@ -1,0 +1,38 @@
+<H2>Exercise data</H2>
+
+<table>
+  <tr>
+    <td>
+      <button (click)="loadAllExercises()">
+        Load all exercises
+      </button>
+    </td>
+    <td>
+      <p>Body part <input type="text" id="bodyPart" name="bodyPart" #bodyPart></p>
+      <button (click)="loadExercisesByBodyPart(bodyPart.value)">
+        Load exercises by body part
+      </button>
+    </td>
+  </tr>
+</table>
+<br/>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Body part</th>
+    <th>Equipment</th>
+    <th>Target</th>
+    <th>Image</th>
+  </tr>
+  <tr *ngFor="let exercise of exercises">
+    <td>{{exercise.id}}</td>
+    <td>{{exercise.name}}</td>
+    <td>{{exercise.bodyPart}}</td>
+    <td>{{exercise.equipment}}</td>
+    <td>{{exercise.target}}</td>
+    <td>
+      <img src="{{exercise.gifUrl}}" width="250" />
+    </td>
+  </tr>
+</table>

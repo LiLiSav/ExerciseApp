@@ -8,20 +8,23 @@ import { ExercisePageComponent } from './exercise-page/exercise-page.component';
 import { BannerComponent } from './banner/banner.component';
 import { ValuesService } from './values-service';
 import { HttpClientModule } from '@angular/common/http';
+import { ExerciseService } from './exercise/exercise.service';
+import { ExerciseComponent } from './exercise/exercise.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ExercisePageComponent,
-    BannerComponent
+    BannerComponent,
+    ExerciseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ValuesService],
+  providers: [ValuesService, ExerciseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
