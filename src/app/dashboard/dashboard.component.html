@@ -1,3 +1,6 @@
+<div (click)="bellClick()" class="ringing-bell">
+  <i class='fa fa-bell faa-ring animated fa-5x'></i>
+</div>
 <div *ngFor="let bodyPart of bodyParts" class="d-grid gap-2 col-6 my-2 mx-auto">
-    <button type="button" class="btn btn-primary btn-lg" (click)="assignMuscle(bodyPart)" [routerLink]="'/exercises'">{{bodyPart.label}}</button>
+  <button type="button" class="btn btn-primary btn-lg" (click)="assignMuscle(bodyPart)" [routerLink]="'/exercises'">{{bodyPart.label}}</button>
 </div>

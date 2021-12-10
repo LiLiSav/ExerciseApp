@@ -9,16 +9,16 @@ import { ValuesService } from '../values-service';
 })
 export class DashboardComponent implements OnInit {
 
-  bodyParts =[
-    {label: 'Chest', name: 'chest'},
-    {label: 'Shoulders', name: 'shoulders'},
-    {label: 'Back', name: 'back'},
-    {label: 'Lower Arm', name: 'lower arms'},
-    {label: 'Upper Arm', name: 'upper arms'},
-    {label: 'Lower Leg', name: 'lower legs'},
-    {label: 'Upper Leg', name: 'upper legs'},
-    {label: 'Waist', name: 'waist'},
-    {label: 'Cardio', name: 'cardio'},
+  bodyParts = [
+    { label: 'Chest', name: 'chest' },
+    { label: 'Shoulders', name: 'shoulders' },
+    { label: 'Back', name: 'back' },
+    { label: 'Lower Arm', name: 'lower arms' },
+    { label: 'Upper Arm', name: 'upper arms' },
+    { label: 'Lower Leg', name: 'lower legs' },
+    { label: 'Upper Leg', name: 'upper legs' },
+    { label: 'Waist', name: 'waist' },
+    { label: 'Cardio', name: 'cardio' },
   ]
 
   constructor(
@@ -27,6 +27,10 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+  }
+
+  bellClick() {
+    alert("It's time to work out!!!!");
   }
 
   assignMuscle(muscle: any) {
