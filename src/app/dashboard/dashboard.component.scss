@@ -10,6 +10,18 @@ body {
   color: #87c80a;
 }
 
+.btn-outline-primary {
+  border-color: #87c80a;
+  color: black;
+  
+}
+.btn-outline-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  border-color: #87c80a;
+  color: black;
+  background-color: #87c80a;
+}
+
+
 @-webkit-keyframes ring {
   0% {
     -webkit-transform: rotate(-15deg);
