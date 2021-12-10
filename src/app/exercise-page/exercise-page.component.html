@@ -1,0 +1,12 @@
+<h2>Exercises to get that {{chosenMuscle}} pump</h2>
+<section class="d-flex flex-wrap justify-content-around">
+    <div *ngFor="let exercise of exercises" class="card card-size my-2" style="max-width: 15rem;">
+        <div class="card-header text-center">{{exercise.name}}</div>
+        <img class="card-img-top" src={{exercise.gifUrl}} alt="exercise gif">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{exercise.bodyPart| uppercase}}</h5>
+          <p class="card-text">Equipement: {{exercise.equipment}}</p>
+        </div>
+        <p class="card-footer text-muted text-center">Targets: {{exercise.target}}</p>
+      </div>
+</section>
